@@ -19,16 +19,20 @@
         </div>
 
         <main>
-            <h1>Join the Dragon Crew and embark on an unforgettable journey! Sign up <em>now</em> to unlock exclusive adventures and become a part of our fearless community.</h1>
-            <h1>You <em>know</em> you want to.</h1>
+            <header>
+                <h1 class="welcome-message">Join the Dragon Crew and embark on an unforgettable journey! Sign up <em>now</em> to unlock exclusive adventures.</h1>
+                <div class="grey-bg">
+                    <h1>You <em>know</em> you want to.</h1>
+                    <h1>Let's do this!</h1>
+                </div>
+            </header>
 
             <div class="form-container">
-                <h1>Let's do this!</h1>
                 <form action="" method="post" id="signUp">
                     <div class="left-container">
                         <div class="input-container">
                             <label for="fName">First Name <span>*</span></label>
-                            <input type="text" name="fName" id="fName" maxlength="30" autocomplete="given-name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                            <input type="text" name="fName" id="fName" maxlength="30" autocomplete="given-name"  required>
                         </div>
 
                         <div class="input-container">
@@ -38,15 +42,20 @@
 
                         <div class="input-container">
                             <label for="password">Password <span>*</span></label>
-                            <input type="password" name="password" id="password" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                            <span id="password-validation" class="validation-message">At least 6 characters.</span>
+                            <input type="password" name="password" id="password" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                            <div id="message">
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">At least <b>6 characters</b></p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="right-container">
                         <div class="input-container">
                             <label for="lName">Last Name</label>
-                            <input type="text" name="lName" id="lName" maxlength="30" autocomplete="family-name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                            <input type="text" name="lName" id="lName" maxlength="30" autocomplete="family-name">
                         </div>
 
                         <div class="input-container">
@@ -58,13 +67,18 @@
                             <label for="confirmPassword">Confirm Password <span>*</span></label>
                             <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                         </div>
+
+                        <div class="submit">
+                            <button type="submit" form="signUp">Create Account</button>
+                            <p>Already have an account? <a href="#">Log In</a></p>
+                        </div>
                     </div>
                 </form>
             </div>
 
-            <button type="submit" form="signUp">Create Account</button>
+            <!-- <button type="submit" form="signUp">Create Account</button>
 
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <p>Already have an account? <a href="#">Log In</a></p> -->
         </main>
     </div>
 

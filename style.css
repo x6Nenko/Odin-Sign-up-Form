@@ -179,4 +179,12 @@ button:hover {
     position: absolute;
     bottom: -25px;
     color: red;
+    display: flex;
+    align-items: center;
+}
+
+.alert-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
 }

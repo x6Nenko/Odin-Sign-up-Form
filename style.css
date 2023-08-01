@@ -1,3 +1,110 @@
-h1 {
-    font-size: 5rem;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #141414;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: auto;
+}
+
+em {
+    color: #F95906;
+}
+
+/* ======================= Imagery Section ======================= */
+
+.imagery-section {
+    position: relative;
+    width: 100%;
+    background-image: url(./Assets/herodragon.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.logo-holder {
+    position: absolute;
+    top: 20px;
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-holder img {
+    height: 80px;
+    height: 40px;
+}
+
+.logo-holder h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* ======================= Form Section ======================= */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main h1:nth-child(1) {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+main h1:nth-child(2) {
+    font-size: 1.9rem;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    border: 2px solid #646464;
+    height: 40px;
+    width: 100%;
+}
+
+input:required {
+    border: 2px solid #000;
 }

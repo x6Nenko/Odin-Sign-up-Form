@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world.</h1>
+    <div class="wrapper">
+        <div class="imagery-section">
+            <div class="logo-holder">
+                <h1>Drag<span><img src="./Assets/dragonicon.png" alt=""></span>n Crew</h1>
+                <!-- <img src="./Assets/dragonicon.png" alt="Dragon Icon"> -->
+            </div>
+        </div>
+
+        <main>
+            <h1>Join the Dragon Crew and embark on an unforgettable journey! Sign up <em>now</em> to unlock exclusive adventures and become a part of our fearless community.</h1>
+            <h1>You <em>know</em> you want to.</h1>
+
+            <div class="form-container">
+                <h1>Let's do this!</h1>
+                <form action="" method="post" id="signUp">
+                    <div class="left-container">
+                        <div class="input-container">
+                            <label for="fName">First Name <span>*</span></label>
+                            <input type="text" name="fName" id="fName" maxlength="30" autocomplete="given-name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" name="password" id="password" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <span id="password-validation" class="validation-message">At least 6 characters.</span>
+                        </div>
+                    </div>
+
+                    <div class="right-container">
+                        <div class="input-container">
+                            <label for="lName">Last Name</label>
+                            <input type="text" name="lName" id="lName" maxlength="30" autocomplete="family-name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="tel" id="tel" autocomplete="tel">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="confirmPassword">Confirm Password <span>*</span></label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <button type="submit" form="signUp">Create Account</button>
+
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </main>
+    </div>
 
     <script src="index.js"></script>
 </body>

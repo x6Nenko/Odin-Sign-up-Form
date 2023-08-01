@@ -4,6 +4,12 @@ const capital = document.getElementById("capital");
 const number = document.getElementById("number");
 const length = document.getElementById("length");
 
+const form = document.getElementById("signUp");
+const password = form.password;
+const confirmPassword = form.confirmPassword;
+const feedback = document.getElementById("confirmPassword-feedback");
+let isPasswordMatch = false;
+
 // When the user clicks on the password field, show the message box
 passInput.onfocus = function() {
     document.getElementById("message").style.display = "block";
@@ -55,3 +61,16 @@ passInput.onkeyup = function() {
         length.classList.add("invalid");
     }
 }
+
+
+// Check if password matches
+
+confirmPassword.addEventListener("input", () => {
+    if (password.value != confirmPassword.value) {
+      feedback.innerHTML = "Password did not match.";
+      isPasswordMatch = false;
+    } else {
+      feedback.innerHTML = "";
+      isPasswordMatch = true;
+    }
+});

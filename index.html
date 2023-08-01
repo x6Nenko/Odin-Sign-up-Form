@@ -28,7 +28,7 @@
             </header>
 
             <div class="form-container">
-                <form action="" method="post" id="signUp">
+                <form action="/" method="POST" id="signUp">
                     <div class="left-container">
                         <div class="input-container">
                             <label for="fName">First Name <span>*</span></label>
@@ -66,10 +66,11 @@
                         <div class="input-container">
                             <label for="confirmPassword">Confirm Password <span>*</span></label>
                             <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <small id="confirmPassword-feedback"></small>
                         </div>
 
                         <div class="submit">
-                            <button type="submit" form="signUp">Create Account</button>
+                            <button>Create Account</button>
                             <p>Already have an account? <a href="#">Log In</a></p>
                         </div>
                     </div>

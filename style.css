@@ -97,6 +97,11 @@ form {
 .input-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+label span {
+    color: #E54E00;
 }
 
 .left-container, .right-container {
@@ -139,28 +144,17 @@ button:hover {
     filter: brightness(1.03);
 }
 
-/* ======================= Helper Message ======================= */
+/* ======================= Helper Messages ======================= */
 
-#message {
-    margin-top: 20px;
-
-}
-
-/* The message box is shown when the user clicks on the password field */
 #message {
     display: none;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 49.48%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 49.48%, rgba(0, 0, 0, 0.00) 100%);
     color: #000;
     position: relative;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-#message p {
-
-}
-
-/* Add a green text color and a checkmark when the requirements are right */
 .valid {
     color: green;
 }
@@ -171,7 +165,6 @@ button:hover {
     content: "✔";
 }
 
-/* Add a red text color and an "x" when the requirements are wrong */
 .invalid {
     color: red;
 }
@@ -180,4 +173,10 @@ button:hover {
     position: relative;
     left: -5px;
     content: "✖";
+}
+
+#confirmPassword-feedback {
+    position: absolute;
+    bottom: -25px;
+    color: red;
 }

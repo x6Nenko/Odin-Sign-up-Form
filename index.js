@@ -77,5 +77,5 @@ confirmPassword.addEventListener("input", () => {
 
 
 function submitForm() {
-    window.alert("Welcome onboard!");
+    isPasswordMatch ? window.alert("Welcome onboard!") : null;
 };

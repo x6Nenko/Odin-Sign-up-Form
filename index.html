@@ -28,55 +28,7 @@
             </header>
 
             <div class="form-container">
-                <form id="signUp">
-                    <!-- <div class="left-container">
-                        <div class="input-container">
-                            <label for="fName">First Name <span>*</span></label>
-                            <input type="text" name="fName" id="fName" maxlength="30" autocomplete="given-name"  required>
-                        </div>
-
-                        <div class="input-container">
-                            <label for="email">Email <span>*</span></label>
-                            <input type="email" name="email" id="email" autocomplete="email" required>
-                        </div>
-
-                        <div class="input-container">
-                            <label for="password">Password <span>*</span></label>
-                            <input type="password" name="password" id="password" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
-                            <div id="message">
-                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                                <p id="number" class="invalid">A <b>number</b></p>
-                                <p id="length" class="invalid">At least <b>6 characters</b></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="right-container">
-                        <div class="input-container">
-                            <label for="lName">Last Name</label>
-                            <input type="text" name="lName" id="lName" maxlength="30" autocomplete="family-name">
-                        </div>
-
-                        <div class="input-container">
-                            <label for="tel">Phone Number</label>
-                            <input type="tel" name="tel" id="tel" autocomplete="tel">
-                        </div>
-
-                        <div class="input-container">
-                            <label for="confirmPassword">Confirm Password <span>*</span></label>
-                            <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="new-password" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                            <small id="confirmPassword-feedback"></small>
-                        </div>
-
-                        <div class="submit">
-                            <button id="submitBtn">Create Account</button>
-                            <p>Already have an account? <a href="#">Log In</a></p>
-                        </div>
-                    </div> -->
-
-
-
+                <form id="signUp" onsubmit="submitForm()" action="javascript:void(0);">
                     <div class="row-container">
                         <div class="input-container">
                             <label for="fName">First Name <span>*</span></label>

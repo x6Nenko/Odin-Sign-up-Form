@@ -74,3 +74,8 @@ confirmPassword.addEventListener("input", () => {
       isPasswordMatch = true;
     }
 });
+
+
+function submitForm() {
+    window.alert("Welcome onboard!");
+};
